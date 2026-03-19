@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer - Indian Bazar</title>
+</head>
+<body>
+
+<h1>Indian Bazar 🛒</h1>
+
+<h2>Available Products</h2>
+
+<div id="products">
+
+  <div>
+    <h3>Product 1</h3>
+    <p>Price: ₹100</p>
+    <img src="https://via.placeholder.com/100">
+    <br><br>
+    <button onclick="order('Product 1')">Buy Now</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3>Product 2</h3>
+    <p>Price: ₹200</p>
+    <img src="https://via.placeholder.com/100">
+    <br><br>
+    <button onclick="order('Product 2')">Buy Now</button>
+  </div>
+
+</div>
+
+<script>
+function order(product) {
+  var number = "917004389755"; // apna WhatsApp number dalna
+  var msg = "I want to buy " + product;
+  var url = "https://wa.me/" + number + "?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
