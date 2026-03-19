@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>India Shopping Mall</title>
+</head>
+<body>
+
+<h1>India Shopping Mall</h1>
+
+<h3>Select State</h3>
+<select id="state">
+  <option value="Bihar">Bihar</option>
+  <option value="UP">Uttar Pradesh</option>
+</select>
+
+<h3>Select District</h3>
+<select id="district">
+  <option value="Saran">Saran</option>
+  <option value="Chapra">Chapra</option>
+</select>
+
+<h3>Select City</h3>
+<select id="city">
+  <option value="Dighwara">Dighwara</option>
+  <option value="Khanpur">Khanpur</option>
+</select>
+
+<h3>Select User Type</h3>
+<select id="usertype">
+  <option value="seller">Seller</option>
+  <option value="customer">Customer</option>
+</select>
+
+<button onclick="goNext()">Continue</button>
+
+<script>
+function goNext() {
+  var type = document.getElementById("usertype").value;
+  if(type=="seller") {
+    window.location.href = "seller.html";
+  } else {
+    window.location.href = "customer.html";
+  }
+}
+</script>
+
+</body>
+</html>
