@@ -2,27 +2,50 @@
 <html>
 <head>
   <title>Indian Bazar</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f1f3f6;
+      text-align: center;
+    }
+    h1 {
+      background-color: #2874f0;
+      color: white;
+      padding: 15px;
+    }
+    select, button {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      background-color: #fb641b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Welcome to Indian Bazar 🛒</h1>
+<h1>Indian Bazar 🛒</h1>
 
 <h3>Select State</h3>
 <select id="state">
-  <option value="Bihar">Bihar</option>
-  <option value="UP">Uttar Pradesh</option>
+  <option>Bihar</option>
+  <option>Uttar Pradesh</option>
 </select>
 
 <h3>Select District</h3>
 <select id="district">
-  <option value="Saran">Saran</option>
-  <option value="Chapra">Chapra</option>
+  <option>Saran</option>
+  <option>Chapra</option>
 </select>
 
 <h3>Select City</h3>
 <select id="city">
-  <option value="Dighwara">Dighwara</option>
-  <option value="Khanpur">Khanpur</option>
+  <option>Dighwara</option>
+  <option>Khanpur</option>
 </select>
 
 <h3>Select User Type</h3>
@@ -31,7 +54,7 @@
   <option value="customer">Customer</option>
 </select>
 
-<br><br>
+<br>
 
 <button onclick="goNext()">Continue</button>
 
