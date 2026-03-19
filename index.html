@@ -1,48 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>India Shopping Mall</title>
+  <title>Indian Bazar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+      border: 5px solid purple;
+    }
+
+    /* Header */
+    .header {
+      background-color: yellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Form Section */
+    .container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 8px;
+      margin: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Search */
+    .search-box {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .search-input {
+      font-size: 25px;
+      padding: 8px;
+      width: 300px;
+    }
+
+    .search-btn {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+  </style>
 </head>
+
 <body>
 
-<h1>India Shopping Mall</h1>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">Indian Bazar</div>
 
-<h3>Select State</h3>
-<select id="state">
-  <option value="Bihar">Bihar</option>
-  <option value="UP">Uttar Pradesh</option>
-</select>
+    <div class="nav">
+      <a href="#">Grocery</a>
+      <a href="#">Electronics</a>
+      <a href="#">Cloth</a>
+    </div>
+  </div>
 
-<h3>Select District</h3>
-<select id="district">
-  <option value="Saran">Saran</option>
-  <option value="Chapra">Chapra</option>
-</select>
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder="Search here...">
+    <button class="search-btn">Search</button>
+  </div>
 
-<h3>Select City</h3>
-<select id="city">
-  <option value="Dighwara">Dighwara</option>
-  <option value="Khanpur">Khanpur</option>
-</select>
+  <!-- Form -->
+  <div class="container">
 
-<h3>Select User Type</h3>
-<select id="usertype">
-  <option value="seller">Seller</option>
-  <option value="customer">Customer</option>
-</select>
+    <h2>Select Details</h2>
 
-<button onclick="goNext()">Continue</button>
+    <div>
+      <h3>Select State</h3>
+      <select id="state">
+        <option value="Bihar">Bihar</option>
+        <option value="UP">Uttar Pradesh</option>
+      </select>
+    </div>
 
-<script>
-function goNext() {
-  var type = document.getElementById("usertype").value;
-  if(type=="seller") {
-    window.location.href = "seller.html";
-  } else {
-    window.location.href = "customer.html";
-  }
-}
-</script>
+    <div>
+      <h3>Select District</h3>
+      <select id="district">
+        <option value="Saran">Saran</option>
+        <option value="Chapra">Chapra</option>
+      </select>
+    </div>
+
+    <div>
+      <h3>Select City</h3>
+      <select id="city">
+        <option value="Dighwara">Dighwara</option>
+        <option value="Khanpur">Khanpur</option>
+      </select>
+    </div>
+
+    <div>
+      <h3>Select User Type</h3>
+      <select id="usertype">
+        <option value="seller">Seller</option>
+        <option value="customer">Customer</option>
+      </select>
+    </div>
+
+    <button onclick="goNext()">Continue</button>
+
+  </div>
+
+  <script>
+    function goNext() {
+      var type = document.getElementById("usertype").value;
+
+      if(type == "seller") {
+        window.location.href = "seller.html";
+      } else {
+        window.location.href = "customer.html";
+      }
+    }
+  </script>
 
 </body>
 </html>
