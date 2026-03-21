@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="./logo.png" width="250"/>
-</p>
-
+https://github.com/Rahulpatel200/IndianBazar/blob/main/logo.png
 # Indian Bazar 🚗
 E commerce
